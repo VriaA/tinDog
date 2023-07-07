@@ -1,6 +1,6 @@
 {
-    "name":"",
-    "short_name":"",
+    "name": "Tindog",
+    "short_name":"Tindog",
     "icons":[
         {
             "src":"/android-chrome-192x192.png",
