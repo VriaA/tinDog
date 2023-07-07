@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-compatible" content="IE=edge">
+
+        <title>Tindog | Home</title>
+
+        <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+        <link rel="manifest" href="dist/site.webmanifest">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&family=Quicksand:wght@700&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+        <link rel="stylesheet" href="/dist/output.css">
+        <link rel="stylesheet" href="/dist/style.css">
+    </head>
+
+    <body class="font-poppin select-none bg-body-pattern bg-no-repeat bg-cover">
+        <div class="flex flex-col items-center justify-start w-full max-w-md min-h-screen mx-auto bg-no-repeat bg-cover bg-gradient-to-b bg-black from-rose-600 via-rose-600 to-[#402342]">
+            <header class="flex justify-between items-center w-full p-4">
+                <img class="w-8 h-8 object-contain" src="images/icon-profile.png" alt="Grey silhouette profile icon">
+                <a class="cursor-pointer" href="index.html"><img class="object-cover rounded-3xl shadow-sm shadow-slate-600 hover:sepia-[40%] hover:brightness-90" src="images/logo.png" alt="Pink and white paw icon"></a>
+                <img class="w-8 h-8 object-cover" src="images/icon-chat.png" alt="Grey chat bubble">
+            </header>
+            
+            <main class="text-center">
+                <div class="relative h-[45vh] px-4 overflow-hidden">
+                    <div class="absolute w-[703%] flex gap-4 h-full animate-scroll">
+                        <img class="h-full w-[300px] object-fill rounded-lg" src="images/dog-clover.jpg" alt="Clover the dog">
+                        <img class="h-full w-[300px] object-fill rounded-lg" src="images/dog-chad.jpg" alt="Chad the dog">
+                        <img class="h-full w-[300px] object-fill rounded-lg" src="images/dog-chestnut.jpg" alt="Chestnut the dog">
+                        <img class="h-full w-[300px] object-fill rounded-lg" src="images/dog-darby.jpg" alt="Darby the dog">
+                        <img class="h-full w-[300px] object-fill rounded-lg" src="images/dog-rex.jpg" alt="Rex the dog">
+                        <img class="h-full w-[300px] object-fill rounded-lg" src="images/dog-clover.jpg" alt="Clover the dog">
+                        <img class="h-full w-[300px] object-fill rounded-lg" src="images/dog-chad.jpg" alt="Chad the dog">
+                        <img class="h-full w-[300px] object-fill rounded-lg" src="images/dog-chestnut.jpg" alt="Chestnut the dog">
+                        <img class="h-full w-[300px] object-fill rounded-lg" src="images/dog-darby.jpg" alt="Darby the dog">
+                        <img class="h-full w-[300px] object-fill rounded-lg" src="images/dog-rex.jpg" alt="Rex the dog">
+                    </div>
+                </div>
+
+                <section class="w-screen max-w-md px-4 text-white flex flex-col items-center">
+                    <h1 class="mt-4 mb-4 font-quicksand text-2xl font-bold uppercase drop-shadow-dogText animate-welcomePing">Welcome to Tindog!</h1>
+                    <a class="inline-block py-2 px-6 mb-6 text-xl font-bold
+                     bg-white text-rose-600 rounded-full shadow-startBtn 
+                     active:shadow-startBtnActive active:translate-y-1 transition-transform
+                    hover:bg-gradient-to-br hover:from-[#7c4480] hover:to-rose-200
+                  hover:text-white" href="swipe.html">Start</a>
+
+                    <div class="relative px-4 pt-4 pb-10 bg-rose-100 rounded-md text-base text-black font-medium">
+                        
+                        <div class="flex animate-hideInstruction">
+                            <div class="relative pr-4 after:block after:h-2/3 after:border-r
+                                       after:border-rose-600 after:absolute 
+                                       after:top-0 after:right-0 after:mt-6">
+                                <p class="text-5xl text-red-700 animate-arrowLeft">&#8592;</p>
+                                <p class="text-red-700">Swipe left to decline</p>
+                            </div>
+
+                            <div class="pl-4">
+                                <p class="text-5xl text-green-800 animate-arrowRight">&#8594;</p>
+                                <p class="text-green-800">Swipe right to accept</p>
+                            </div>
+                        </div>
+
+                        <div class="absolute inset-0 pt-4 animate-showInstruction">
+                            <div class="relative flex justify-center items-center">
+
+                                <div class="relative flex flex-col justify-center items-center 
+                                pr-8 after:block after:h-2/3 after:border-r
+                              after:border-rose-600 after:absolute 
+                                after:top-0 after:right-0 after:mt-4">
+                                <p class="mb-2 animate-declineText">Tap to decline</p>
+                                <div class="w-fit flex items-center bg-white p-5
+                                             rounded-full animate-declineIcon"> 
+                                <img class="w-6 h-6" src="images/icon-cross.png" alt="Decline"></div>
+                            </div>
+
+                            <div class="flex flex-col justify-center items-center pl-8">
+                                <p class="mb-2 animate-acceptText">Tap to accept</p>
+                                <div class="w-fit flex items-center bg-white p-5
+                                             rounded-full animate-acceptIcon">
+                                <img class="w-6 h-6" src="images/icon-heart.png" alt="accept"></div>
+                            </div>
+
+                            <div class="absolute flex items-end justify-start w-full h-full">
+                                <i class="relative left-[70%] text-2xl fa-regular fa-hand-pointer animate-instructionCursor"></i>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </main>
+        </div>
+    </body>
+</html>

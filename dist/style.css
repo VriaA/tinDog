@@ -1,0 +1,3 @@
+.nope-btn:hover > .cancel-icon, .like-btn:hover > .like-icon {
+    filter: saturate(0) brightness(200%);
+}
