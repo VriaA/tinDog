@@ -13,7 +13,7 @@ class Dog {
                     <img id="nope-badge" class="hidden absolute top-10 left-6 w-36 rotate-[-40deg] object-contain" src="images/badge-nope.png" alt="Nope badge">
                     <div class="absolute bottom-4 left-6 pr-4 text-white tracking-wider">
                         <p class="font-medium text-3xl drop-shadow-dogText">${name}, ${age}</p>
-                        <p class="font-thin text-xl break-words drop-shadow-dogText">${bio}</p>
+                        <p class="font-extralight text-xl break-words drop-shadow-dogText">${bio}</p>
                     </div>
                 </div>`
     }
