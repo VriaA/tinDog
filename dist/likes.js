@@ -20,7 +20,7 @@ function renderLikes(likedDogs) {
                             <i class="mt-2 text-6xl fa-solid fa-heart-crack drop-shadow-2xl"></i>
                         </div>`
     }
-    document.body.style.overflow = 'scroll'
+    document.body.style.overflowY = 'scroll'
     document.getElementById('main').innerHTML =  `<section class="w-full text-center text-white">          
                                     <h2 class="mt-4 mb-6 font-quicksand text-3xl font-bold uppercase drop-shadow-dogText animate-welcomePing">Your Likes</h2>
                                     <div class="flex flex-col w-full gap-4 flex-wrap px-2 pb-4 md:flex-row justify-center items-center">
